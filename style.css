@@ -3,6 +3,7 @@
 :root {
     --main-color: #002554;
     --lighter-blue: #005EB8;
+    --neutral: #383D43;
 }
 
 * {
@@ -72,6 +73,19 @@ html, body {
     text-align: right;
     right: 0;
     padding-right: 48px;
+}
+
+.carousel-caption h1 {
+    font-family: "Neo Sans Arabic Bold";
+    color: var(--main-color);
+    font-size: 45px;
+    margin-bottom: 3rem;
+}
+
+.carousel-caption p {
+    font-size: 23px;
+    line-height: 2;
+    color: var(--neutral);
 }
 
 .carousel-indicators {
@@ -144,4 +158,22 @@ html, body {
     width: 151px;
     height: 51px;
     margin: 5rem auto;
+}
+
+
+.carousel-dark .carousel-indicators [data-bs-target]{
+    background-color: #DBDBDB;
+    border: 1px solid #DBDBDB;
+    border-radius: 12px;
+    height: 5px;
+    width: 35px;
+    margin: auto 0.5rem;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target].active{
+    background-color: var(--lighter-blue);
+    border: 1px solid var(--lighter-blue);
+    border-radius: 12px;
+    height: 10px;
+    width: 50px;
 }
